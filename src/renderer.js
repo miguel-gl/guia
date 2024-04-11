@@ -19,3 +19,29 @@ btnCambiarImagen.addEventListener('click', async () => {
     console.error('Error al descargar la imagen:', error);
   }
 });
+
+// Cuando se recibe el mensaje de que hay una actualización disponible
+ipcRenderer.on('update-available', () => {
+  const updateAvailableDiv = document.getElementById('update-available');
+  updateAvailableDiv.style.display = 'block'; // Mostrar el mensaje
+  
+  // Cuando se hace clic en "Descargar"
+  const downloadButton = document.getElementById('download-update');
+  downloadButton.addEventListener('click', () => {
+    ipcRenderer.send('download-update');
+    downloadButton.innerText = 'Descargando...';
+    downloadButton.disabled = true;
+  });
+  
+  // Cuando se hace clic en "Instalar"
+  const installButton = document.getElementById('install-update');
+  installButton.addEventListener('click', () => {
+    ipcRenderer.send('install-update');
+  });
+});
+
+// Cuando se recibe el mensaje de que la actualización está descargada
+ipcRenderer.on('update-downloaded', () => {
+  const installButton = document.getElementById('install-update');
+  installButton.style.display = 'inline-block'; // Mostrar el botón de instalar
+});
