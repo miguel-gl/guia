@@ -1,6 +1,6 @@
 {
   "name": "guia",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Guia Enciclopedica Interaciva",
   "main": "src/main.js",
   "scripts": {
@@ -8,15 +8,15 @@
     "build": "electron-builder"
   },
   "keywords": [],
-  "author": "",
+  "author": "Miguel Gonzalez",
   "license": "ISC",
   "devDependencies": {
     "electron": "^29.3.0",
-    "electron-builder": "^24.13.3",
-    "electron-updater": "^6.1.8"
+    "electron-builder": "^24.13.3"
   },
   "dependencies": {
-    "axios": "^1.6.8"
+    "axios": "^1.6.8",
+    "electron-updater": "^6.1.8"
   },
   "build": {
     "appId": "com.sai.guia",
@@ -24,19 +24,13 @@
     "directories": {
       "output": "dist"
     },
-    "win": {
-      "target": "nsis"
-    },
-    "mac": {
-      "target": "dmg"
-    },
-    "linux": {
-      "target": "AppImage"
-    },
     "publish": {
       "provider": "github",
       "owner": "miguel-gl",
       "repo": "guia"
+    },
+    "win": {
+      "target": "nsis"
     }
   }
 }
