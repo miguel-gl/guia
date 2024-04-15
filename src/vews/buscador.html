@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Buscador</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/stylos.css">
+    <link rel="stylesheet" href="css/plugins/jquery-ui.css">
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/plugins/solid.js"></script>
+    <script defer src="js/plugins/fontawesome.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="bg-glosario">
+            <div class="sidebar-header">
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li class="active">
+                    <a href="">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">Mis Datos</a>
+                </li>
+                <li>
+                    <a href="glosario.html">Diccionario</a>
+                </li>
+                <li>
+                    <a href="temario.html">Temario</a>
+                </li>
+            </ul>
+
+            <div class="icon-sidebar">
+            <img src="images/icon_guia.svg" alt="guia" >
+            </div>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto perfil-nav">
+                            <li class="nav-item active">
+
+                            </li>
+ 
+                           <li class="dropdown nav-item pt-10">
+<p class="text-nav">Bienvenido, </p>
+<div class="user-nav">
+<div class="dropdown">
+  <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Johana. <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="perfil.html">Editar Perfil</a>
+    <a class="dropdown-item" href="index.html">Salir</a>
+  </div>
+</div>
+</div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header>
+            	<div class="container">
+            		<div class="row">
+            			<div class="header-logo" style="width:60px;">
+            				<img src="images/logo_guia.png">
+            			</div>
+            		</div>
+            	</div>
+            </header>
+
+            <div class="container header-txt">
+            	<div class="row">
+            		<div class="col-12">
+            			<h1 class="titulo-buscador">Buscar un tema, una palabra o elige una categoría</h1>
+            		</div>
+            		
+            	</div>
+            </div>
+
+
+            <div class="container">
+            	<div class="row">
+                    <div class="buscador">
+                        <form id="form_busqueda">
+                            <div class="input-group mb-3 ui-widget">
+                            <input id="buscador" type="text" class="form-control input-buscar" placeholder="Buscar..." aria-label="">
+                            <div class="input-group-append">
+                            <span class="input-group-text buscar-span" onclick="buscar()"><i class="fa fa-search"></i></span>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+    </div>
+</div>
+
+<div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="tema-busqueda hvr-pop">
+                                <a onclick="disciplina(19)"><img src="images/campos/lenguaje.png"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tema-busqueda hvr-pop">
+                                <a onclick="disciplina(1)"><img src="images/campos/cientifico.png"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tema-busqueda hvr-pop">
+                                <a onclick="disciplina(18)"><img src="images/campos/etica.png"></a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="tema-busqueda hvr-pop">
+                                <a onclick="disciplina(21)"><img src="images/campos/humano.png"></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery-->
+    <script>window.$ = window.jQuery = require('jquery');</script>  
+    <!-- Popper.JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="js/plugins/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery-ui.js"></script>
+    <script src="js/buscador.js"></script>
+</body>
+
+</html>

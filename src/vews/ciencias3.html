@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ciencias 3</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/stylos.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+ <nav id="sidebar" class="bg-ciencia">
+            <div class="sidebar-header">
+                <h1>Ciencia</h1>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a href="#preescolar" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Preescolar</a>
+                    <ul class="collapse list-unstyled" id="preescolar">
+                        <li>
+                            <a href="#">1er Año</a>
+                        </li>
+                        <li>
+                            <a href="#">2do Año</a>
+                        </li>
+                        <li>
+                            <a href="#">3er Año</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#primaria" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Primaria</a>
+                    <ul class="collapse list-unstyled" id="primaria">
+                        <li>
+                            <a href="#">1er Año</a>
+                        </li>
+                        <li>
+                            <a href="#">2do Año</a>
+                        </li>
+                        <li>
+                            <a href="#">3er Año</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#secundaria" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Secundaria</a>
+                    <ul class="collapse list-unstyled" id="secundaria">
+                        <li>
+                            <a href="#">1er Año</a>
+                        </li>
+                        <li>
+                            <a href="#">2do Año</a>
+                        </li>
+                        <li>
+                            <a href="#">3er Año</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="icon-sidebar">
+            <img src="images/icon_guia.svg" alt="guia" >
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-menu">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <span> Menú Principal</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto perfil-nav">
+                            <li class="nav-item active">
+<div class="form-nav">
+    <form class="form-inline my-2 my-lg-0">
+ <div class="input-group">
+    <input type="text" class="form-control" placeholder="Buscar nuevo tema...">
+    <div class="input-group-append">
+      <button class="btn btn-search" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+    </form>
+</div>
+                            </li>
+ 
+                           <li class="dropdown nav-item pt-10">
+<p class="text-nav">Bienvenido, </p>
+<div class="user-nav">
+<div class="dropdown">
+  <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Johana. <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="index.html">Inicio</a>
+    <a class="dropdown-item" href="#">Editar Perfil</a>
+    <a class="dropdown-item" href="#">Salir</a>
+  </div>
+</div>
+</div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header>
+            	<div class="container">
+            		<div class="row">
+            			<div class="header-logo">
+            				   <img src="images/ciencias.png" alt="Ciencia">
+            			</div>
+            		</div>
+            	</div>
+            </header>
+
+            <div class="container header-txt">
+            	<div class="row">
+            		<div class="col">
+            			<h1 class="content-title">Resultados</h1>
+            		</div>
+            	</div>
+            </div>
+
+
+            <div class="container">
+            	<div class="row">
+     				<div class="accordion">
+ <div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-ciencia" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i> El sistema Solar y Agujeros Negros</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body b-right-green">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus totam beatae assumenda eligendi quidem quaerat sapiente quia ullam neque, similique enim atque, quis eaque, aliquam voluptas quos dolor molestias?.  
+                    <a href="#" class="leer-mas text-green" onclick="leer_articulo()">Leer Más</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-ciencia collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i> La Ley de la Relatividad y las Implicaicones en la Ciencia</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body b-right-green">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus totam beatae assumenda eligendi quidem quaerat sapiente quia ullam neque, similique enim atque, quis eaque, aliquam voluptas quos dolor molestias?.  
+                    <a href="#" class="leer-mas text-green">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-ciencia collapsed" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-plus"></i> ¿Que es el pensamiento científico?</button>                     
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body b-right-green">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus totam beatae assumenda eligendi quidem quaerat sapiente quia ullam neque, similique enim atque, quis eaque, aliquam voluptas quos dolor molestias?.  
+                    <a href="#" class="leer-mas text-green">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-ciencia collapsed" data-toggle="collapse" data-target="#T4"><i class="fa fa-plus"></i> ¿Cómo se hace una investigación?</button>
+                </h2>
+            </div>
+            <div id="T4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body b-right-green">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus totam beatae assumenda eligendi quidem quaerat sapiente quia ullam neque, similique enim atque, quis eaque, aliquam voluptas quos dolor molestias?.  
+                    <a href="#" class="leer-mas text-green">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="heading5">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link acc-ciencia collapsed" data-toggle="collapse" data-target="#T5"><i class="fa fa-plus"></i> ¿Cuales son los metodos de investigación?</button>
+                </h2>
+            </div>
+            <div id="T5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                <div class="card-body b-right-green">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus totam beatae assumenda eligendi quidem quaerat sapiente quia ullam neque, similique enim atque, quis eaque, aliquam voluptas quos dolor molestias?.  
+                    <a href="#" class="leer-mas text-green">Leer Más</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+     				</div>
+            	</div>
+            </div>
+
+        <footer class="footer">
+              <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                        <p><span>© 2020 Sistemas Audiovisuales Internacionales <a href="#">savi.com.mx</a></span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                        <ul class="foot-list">
+                            <a class="p-2 txt-blue" href="#">Acerca de</a>
+                            <a class="p-2 txt-blue" href="#">Blog</a>
+                            <a class="p-2 txt-blue" href="#">Política de Privacidad</a>
+                            <a class="p-2 txt-blue" href="#">Términos y Condiciones</a>
+                            <a class="p-2 txt-blue" href="#">Contacto</a>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </footer>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

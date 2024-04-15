@@ -1,36 +1,28 @@
 {
-  "name": "guia",
-  "version": "1.1.0",
-  "description": "Guia Enciclopedica Interaciva",
-  "main": "src/main.js",
+  "name": "enciclopedia",
+  "productName": "enciclopedia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "build": {
+    "compression": "maximum"
+  },
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "package-win": "electron-packager . Enciclopedia --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Enciclopedia\""
   },
-  "keywords": [],
-  "author": "Miguel Gonzalez",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^29.3.0",
-    "electron-builder": "^24.13.3"
+    "axios": "^1.6.8",
+    "electron": "^14.2.9",
+    "electron-packager": "^15.4.0"
   },
   "dependencies": {
     "axios": "^1.6.8",
-    "electron-updater": "^6.1.8"
-  },
-  "build": {
-    "appId": "com.sai.guia",
-    "productName": "Guia Enciclopedica Interaciva",
-    "directories": {
-      "output": "dist"
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "miguel-gl",
-      "repo": "guia"
-    },
-    "win": {
-      "target": "nsis"
-    }
+    "form-data": "^4.0.0",
+    "jquery": "^3.6.0",
+    "request": "^2.88.2",
+    "sweetalert2": "^11.1.6"
   }
 }

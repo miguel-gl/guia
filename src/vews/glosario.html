@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Diccionario</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/stylos.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/plugins/solid.js"></script>
+    <script defer src="js/plugins/fontawesome.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="bg-glosario">
+            <div class="sidebar-header">
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a href="buscador.html">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="perfil.html">Mis Datos</a>
+                </li>
+                <li class="active">
+                    <a href="glosario.html">Diccionario</a>
+                </li>
+                <li>
+                    <a href="temario.html">Temario</a>
+                </li>
+            </ul>
+
+            <div class="icon-sidebar">
+            <img src="images/icon_guia.svg" alt="guia" >
+            </div>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn btn-menu">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <span> Menú Principal</span>
+        </button>
+        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-align-justify"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto perfil-nav">
+            <li class="nav-item active">
+            </li>
+            <li class="dropdown nav-item pt-10">
+            <p class="text-nav">Bienvenido, </p>
+            <div class="user-nav">
+            <div class="dropdown">
+            <button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Johana. <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="index.html">Inicio</a>
+            <a class="dropdown-item" href="#">Editar Perfil</a>
+            <a class="dropdown-item" href="#">Salir</a>
+            </div>
+            </div>
+            </div>
+            </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+            <header>
+            	<div class="container">
+            		<div class="row">
+            			<div class="header-logo">
+            				<img src="images/logo_guia.png">
+            			</div>
+            		</div>
+            	</div>
+            </header>
+
+            <div class="container header-txt">
+            	<div class="row">
+            		<div class="col">
+            			<h1 class="content-title">Diccionario</h1>
+            		</div>
+            	</div>
+            </div>
+            
+            <div style="text-align: center;"> 
+                <p class="letters" style="text-align: center; display: inline">< </p>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(1)">A </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(2)">B </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(3)">C </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(4)">D </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(5)">E </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(6)">F </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(7)">G </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(8)">H </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(9)">I </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(10)">J </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(11)">K </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(12)">L </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(13)">M </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(14)">N </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(15)">Ñ </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(16)">O </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(17)">P </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(18)">Q </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(19)">R </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(20)">S </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(21)">T </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(22)">U </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(23)">V </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(24)">W </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(25)">X </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(26)">Y </div>
+                <div class="letters" style="cursor: pointer; display: inline; text-align: center" onclick="get_letra(27)">Z </div>
+                <p class="letters" style="text-align: center; display: inline">></p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="buscador">
+                        <form>
+                            <div class="input-group mb-3 ui-widget">
+                                <input id="buscador" type="text" class="form-control input-buscar" placeholder="Buscar..." aria-label="">
+                                <div class="input-group-append">
+                                    <span class="input-group-text buscar-span" onclick="get_busqueda()"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+    <div class="container">
+    <div class="row">
+    <div class="accordion">
+    <div class="bs-example">
+    <div class="accordion" id="accordion_resultados">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script>window.$ = window.jQuery = require('jquery');</script>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- Popper.JS -->
+    <script src="js/plugins/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery-ui.js"></script>
+    <script src="js/diccionario.js"></script>
+</body>
+
+</html>

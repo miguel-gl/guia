@@ -1,0 +1,23 @@
+[
+{"type":"header","version":"4.9.7","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"siste130_sai"},
+{"type":"table","name":"asignaturas","database":"siste130_sai","data":
+[
+{"id":"1","id_disciplina":"1","nombre":"Matemáticas","descripcion":"Matemáticas","color":null,"imagen":null,"estatus":"1"},
+{"id":"4","id_disciplina":"21","nombre":"Artes","descripcion":"Actividad en la que el hombre recrea, con una finalidad estética, un aspecto de la realidad o un sentimiento en formas bellas valiéndose de la materia, la imagen o el sonido.","color":null,"imagen":null,"estatus":"1"},
+{"id":"5","id_disciplina":"18","nombre":"Biología","descripcion":"Ciencia que estudia la vida ","color":null,"imagen":null,"estatus":"1"},
+{"id":"6","id_disciplina":"18","nombre":"Física","descripcion":"Ciencia natural que estudia, mediante leyes fundamentales, la energía y la materia.","color":null,"imagen":null,"estatus":"1"},
+{"id":"7","id_disciplina":"18","nombre":"Química","descripcion":"Ciencia que estudia la materia, su constitución, sus propiedades y sus  transformaciones.","color":null,"imagen":null,"estatus":"1"},
+{"id":"8","id_disciplina":"19","nombre":"Español","descripcion":"Compendio de temas basados en el uso, aplicación y funcionalidad del lenguaje tanto oral como escrito.","color":null,"imagen":null,"estatus":"1"},
+{"id":"10","id_disciplina":"21","nombre":"Historia ","descripcion":"Estudia y expone, de acuerdo con ciertos principios  y métodos, los acontecimientos  y hechos que  pertenecen al tiempo pasado  y que constituyen  el desarrollo de la humanidad  desde sus orígenes  hasta el presente","color":null,"imagen":null,"estatus":"1"},
+{"id":"12","id_disciplina":"21","nombre":"Geografía","descripcion":"La Geografía es la ciencia que se encarga de explicar y describir la superficie terrestre, así como la relación que tiene con los fenómenos físicos, biológicos y sociales que en ella se manifiesten. ","color":null,"imagen":null,"estatus":"1"},
+{"id":"15","id_disciplina":"18","nombre":"Ciencias Naturales","descripcion":"Son las ciencias que estudian temas relacionados con la naturaleza y conocimientos vinculados con el medio que nos rodea como seres vivos.","color":null,"imagen":null,"estatus":"1"},
+{"id":"16","id_disciplina":"21","nombre":"Socialización","descripcion":"Es el proceso por el cual el niño, aprende a diferenciar lo aceptable de lo inaceptable en su comportamiento. ... Este proceso mediante el cual los niños aprenden a diferenciar lo aceptable (positivo) de lo inaceptable (negativo) en su comportamiento.","color":null,"imagen":null,"estatus":"1"},
+{"id":"17","id_disciplina":"21","nombre":"Formación cívica y ética","descripcion":"Formación de individuos  cívicos con compromiso social","color":null,"imagen":null,"estatus":"1"},
+{"id":"20","id_disciplina":"23","nombre":"Expresión corporal","descripcion":"La Expresión Corporal es la forma más antigua de comunicación entre los seres humanos, anterior al lenguaje escrito y hablado. Es el medio para expresar sensaciones, sentimientos, emociones y pensamientos.","color":null,"imagen":null,"estatus":"1"},
+{"id":"24","id_disciplina":"25","nombre":"Desarrollo socioemocional","descripcion":"Desarrollo socioemocional","color":null,"imagen":null,"estatus":"1"},
+{"id":"25","id_disciplina":"26","nombre":"Mundo Natural ","descripcion":"Mundo Natural ","color":null,"imagen":null,"estatus":"1"},
+{"id":"26","id_disciplina":"21","nombre":"Desarrollo emocional","descripcion":"Desarrollo emocional","color":null,"imagen":null,"estatus":"1"}
+]
+}
+]

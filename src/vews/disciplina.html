@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Buscador</title>
+    <!-- Bootstrap CSS CDN -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/plugins/flexselect.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/stylos.css">
+    <link href="css/hover-min.css" rel="stylesheet" media="all">
+    <link href="css/plugins/jquery.bxslider.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/plugins/jquery-ui.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="js/plugins/solid.js"></script>
+    <script defer src="js/plugins/fontawesome.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+ <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <h1 id="nombre_discilpina"></h1>
+            </div>
+            <div class="icon-sidebar">
+            <img src="images/icon_guia.svg" alt="guia" >
+            </div>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                   <a href="buscador.html"><button type="button" id="sidebarCollapse" class="btn btn-menu">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        <span>Atras</span>
+                    </button>
+                       </a>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto perfil-nav">
+                            <li class="nav-item active">
+
+                            </li>
+ 
+                           <li class="dropdown nav-item pt-10">
+<p class="text-nav">Bienvenido, </p>
+<div class="user-nav">
+<div class="dropdown">
+<button class="btn-user dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Johana. <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<a class="dropdown-item" href="buscador.html">Inicio</a>
+<a class="dropdown-item" href="perfil.html">Editar Perfil</a>
+<a class="dropdown-item" href="index.html">Salir</a>
+</div>
+</div>
+</div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header>
+            	<div class="container">
+            		<div class="row">
+            			<div class="header-logo">
+            				   <img id="img_disciplina" src="images/espan%CC%83ol.png">
+            			</div>
+            		</div>
+            	</div>
+            </header>
+            <div class="container header-txt">
+            	<div class="row">
+            		<div class="col-12">
+            			<h1 class="titulo-buscador" id="titulo_disciplina"></h1>
+            		</div>
+            		
+            	</div>
+            </div>
+            <div class="container">
+            <div class="row">
+            <div class="buscador">
+            <form id="form_busqueda">
+                <input type="hidden" id="txtrol" value="">
+                <input type="hidden" id="txtdisciplina" value="">
+                <input type="hidden" id="asignatura" value="">
+                <div class="input-group mb-3 ui-widget" id="asignatura_cont" style="display: none;">
+                    <select id="asignatura_select" class="form-control input-buscar" onchange="articulos_ciencia_n2()">
+                        <option value="0">Todos Los Temas</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3 ui-widget">
+                    <select id="temas_select" class="form-control input-buscar" onchange="active()">
+                      </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text buscar-span" onclick="get_busqueda()"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </form>
+            </div>
+            </div>
+            </div>
+            <div class="container header-txt">
+            	<div class="row">
+            		<div class="col">
+            			<h1 class="content-title">Resultados</h1>
+            		</div>
+            	</div>
+            </div>
+          <div class="container">
+            <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="accordion">
+            <div class="bs-example">
+            <div class="accordion" id="accordion_resultados">
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="container" id="tronco" style="display: none;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
+                      <div class="container">
+
+                        <div class="card">
+                            <div class="card-header" id="head_pre">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link '+s[6]+'" data-toggle="collapse" data-target="#collapse_preesolar">
+                                        <i class="fa fa-plus"></i>Desplegar Preescolar
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse_preesolar" class="collapse" aria-labelledby="head_pre" data-parent="#xxx">
+                                <div class="card-body '+s[7]+'">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                          <a href="#" class="img-fluid mb-4">
+                                              <div class="demo"  onclick="articulos_tema(1)" style="background-image: url(images/math2.png);">
+                                                  <input type="hidden" id="tema_1" value="">
+                                                      <p class="" id="nombre_tema_1"></p>
+                                              </div>
+                                              </a>
+                                              <a href="#" class="img-fluid mb-4">
+                                              <div class="demo"  onclick="articulos_tema(2)" style="background-image: url(images/math3.png);">
+                                                  <input type="hidden" id="tema_2" value="">
+                                                      <p class="" id="nombre_tema_2"></p>
+                                              </div>
+                                              </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                          <a href="#" class="img-fluid mb-4">
+                                              <div class="demo"  onclick="articulos_tema(3)" style="background-image: url(images/math4.png);">
+                                                  <input type="hidden" id="tema_3" value="">
+                                                      <p class="" id="nombre_tema_3"></p>
+                                              </div>
+                                              </a>
+              
+                                              <a href="#" class="img-fluid mb-4">
+                                              <div id="t_4" class="demo demo-2"  onclick="articulos_tema(4)" style="background-image: url(images/math5.png);">
+                                                  <input type="hidden" id="tema_4" value="">
+                                                      <p class="" id="nombre_tema_4"></p>
+                                              </div>
+                                              </a>
+                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+                    <div class="col-sm-12 col-md-2 col-lg-4">
+                        <div class="theme-rel bg-gray" style="display: none;">
+                            <h3>Temas Sugeridos</h3>
+                            <ul>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">Signos de puntuación.</a></li>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">Relatos Tradicionales.</a></li>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">El libro y sus partes</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="theme-rel bg-dato">
+                            <h3 class="text-blue">¡Navega!</h3>
+                            <p>Navega por los temas de tu enciclopedia, juega y aprende con los elementos interactivos de cada tema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="especial" style="display: none;">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
+                      <div class="container">
+                        <div class="card">
+                            <div class="card-header" id="head_prees">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link '+s[6]+'" data-toggle="collapse" data-target="#collapse_prees">
+                                        <i class="fa fa-plus"></i>Desplegar Preescolar
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapse_prees" class="collapse" aria-labelledby="head_prees" data-parent="#xxx">
+                                <div class="card-body '+s[7]+'">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                          <a href="#" class="img-fluid mb-4">
+                                            <div class="demo"  onclick="articulos_ciencia(1)" style="background-image: url(images/math2.png);">
+                                                <input type="hidden" id="asignatura_1" value="">
+                                                    <p class="" id="nombre_asignatura_1"></p>
+                                            </div>
+                                            </a>
+            
+                                           <a href="#" class="img-fluid mb-4">
+                                            <div class="demo demo-2"  onclick="articulos_ciencia(2)" style="background-image: url(images/math6.png);">
+                                                <input type="hidden" id="asignatura_2" value="">
+                                                    <p class="" id="nombre_asignatura_2"></p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                          <a href="#" class="img-fluid mb-4">
+                                            <div class="demo"  onclick="articulos_ciencia(3)" style="background-image: url(images/math4.png);">
+                                                <input type="hidden" id="asignatura_3" value="">
+                                                    <p class="" id="nombre_asignatura_3"></p>
+                                            </div>
+                                            </a>
+            
+                                           <a href="#" class="img-fluid mb-4">
+                                            <div class="demo demo-2"  onclick="articulos_ciencia(4)" style="background-image: url(images/math5.png);">
+                                                <input type="hidden" id="asignatura_4" value="">
+                                                    <p class="" id="nombre_asignatura_4"></p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                                          <a href="#" class="img-fluid mb-4" style="display: none;" id="figure_5">
+                                            <div class="demo"  onclick="articulos_ciencia(5)" style="background-image: url(images/math3.png);" >
+                                                <input type="hidden" id="asignatura_5" value="">
+                                                    <p class="" id="nombre_asignatura_5"></p>
+                                            </div>
+                                            </a>
+            
+                                           <a href="#" class="img-fluid mb-4" style="display: none;" id="figure_6">
+                                            <div class="demo "  onclick="articulos_ciencia(6)" style="background-image: url(images/math4.png);">
+                                                <input type="hidden" id="asignatura_6" value="">
+                                                    <p class="" id="nombre_asignatura_6"></p>
+                                            </div>
+                                            </a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                      </div>
+                    </div>
+            
+                    <div class="col-sm-12 col-md-2 col-lg-4" >
+                        <div class="theme-rel bg-gray" style="display: none;">
+                            <h3>Temas Sugeridos</h3>
+                            <ul>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">Signos de puntuación.</a></li>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">Relatos Tradicionales.</a></li>
+                                <li><a href="#" onclick="leer_articulo(id,id_d,id_bd)">El libro y sus partes</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="theme-rel bg-dato">
+                            <h3 class="text-blue">¡Navega!</h3>
+                            <p>Navega por los temas de tu enciclopedia, juega y aprende con los elementos interactivos de cada tema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script>
+        window.$ = window.jQuery = require('jquery')
+    </script>  
+    <script src="js/plugins/jquery.bxslider.js"></script>
+    <!-- Popper.JS -->
+    <script src="js/plugins/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/jquery-ui.js"></script>
+    <script src="js/plugins/liquidmetal.js" type="text/javascript"></script>
+    <script src="js/plugins/jquery.flexselect.js" type="text/javascript"></script>
+    <script src="js/disciplina.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+@font-face{
+  font-family: "Poppins-Bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/Poppins-Bold.otf);
+}
+@font-face{
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/Poppins-Regular.otf);
+}
+@font-face{
+  font-family: "Poppins-SemiBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url(fonts/Poppins-SemiBold.otf);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.tema-busqueda{
+  width: 90%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.tema-busqueda img{
+  width: 100%;
+}
+body {
+  background: url(../images/background1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+body.rol {
+  background: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+h1{
+    font-family: "Poppins-Bold";
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    margin: -90px 0;
+}
+h4{
+  text-align:left!important;
+}
+
+a{
+  font-family: "Poppins-Regular";
+  color: #ff3333;
+}
+
+a:hover {
+  color: #c70606;
+  text-decoration: none;
+}
+
+p{
+    font-family: "Poppins-Regular";
+    color: #9b9b9b;
+    margin-top: 15px;
+}
+
+
+.logo{
+    margin: 5px 10%;
+}
+
+.right-b{
+    padding-top: 50px;
+    margin-left: 45%;
+    text-transform: uppercase;
+}
+
+.login-form{
+      width: 100%;
+    max-width: 400px;
+    margin: -20px auto;
+}
+
+.active{
+  border:1px solid red;
+}
+
+
+.form-signin {
+    width: 90%;
+    padding: 40px;
+    margin: 0 auto;
+    background: rgb(255 255 255);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+.btn-login{
+    background: #ff3333;
+    color:white;
+}
+
+.btn-login: hover{
+    background: #ff3333;
+}
+
+.foot-list{
+  margin-top:15px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    color: #f5f5f5;
+    font-size: 0.8rem;
+}
+
+footer a {
+    cursor: pointer;
+    color: #f5040e !important;
+    text-decoration: none;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 360px) and (max-width: 576px)  { 
+
+.logo {
+    margin: 0 auto;
+    width: 105px;
+}
+
+.right-b {
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    color: #f5f5f5;
+    font-size: 0.6rem;
+}
+
+footer p{
+  text-align: center;
+    color: white;
+}
+
+.foot-list {
+    margin-left: -30px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+}

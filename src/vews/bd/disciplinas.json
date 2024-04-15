@@ -1,0 +1,13 @@
+[
+{"type":"header","version":"4.9.7","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"siste130_sai"},
+{"type":"table","name":"disciplinas","database":"siste130_sai","data":
+[
+{"id":"1","nombre":"Matemáticas ","descripcion":"La matemática es la ciencia deductiva que se dedica al estudio de las propiedades de los entes abstractos y de sus relaciones.","imagen":null,"color":null,"estatus":"1"},
+{"id":"18","nombre":"Ciencias","descripcion":"<p>Ciencias<\/p>\r\n","imagen":null,"color":null,"estatus":"1"},
+{"id":"19","nombre":"Español","descripcion":"<p>Es la disciplina encargada de abordar el conjunto de reglas y normas cuya funci&oacute;n es especificar los principios que rigen el uso de l lenguaje.<\/p>\r\n","imagen":null,"color":null,"estatus":"1"},
+{"id":"21","nombre":"Ciencias Sociales ","descripcion":"<p>Ciencias que estudian el comportamiento &nbsp;del hombre en la sociedad y sus formas de organizaci&oacute;n.<\/p>\r\n","imagen":null,"color":null,"estatus":"1"},
+{"id":"22","nombre":"Desarrollo emocional","descripcion":"","imagen":null,"color":null,"estatus":"1"}
+]
+}
+]

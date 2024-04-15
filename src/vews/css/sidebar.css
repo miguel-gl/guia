@@ -1,0 +1,263 @@
+/*
+    DEMO STYLE
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.form-nav{
+    margin-right: 30px;
+    padding-top: 5px;
+}
+
+.text-nav{
+    display: inline-block;
+    float: left;
+    width: 120px;
+    font-weight: bold;
+    color: black;
+}
+.user-nav{
+        display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-user{
+    width: 160px;
+    border: none;
+    background: #f8f9fa;
+    color: #0071bc;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -10px;
+}
+.btn-search{
+        background: #f8f9fa;
+    color: #0071bc;
+    border-color: #ced4da;
+}
+.pt-10{
+    padding-top: 10px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.bg-glosario{
+    background: #2e3192;
+}
+
+.bg-math{
+    background: #0071bc;
+}
+
+.bg-ciencia{
+    background: #9bd227;
+}
+.bg-espanol{
+    background: #F02D35;
+}
+.bg-matematicas{
+    background: #0071BC;
+}
+.bg-ciencias_sociales{
+    background: #FF9D01;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px 5px;
+    position: fixed;
+}
+
+.sidebar-header h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+#sidebar ul.components {
+    padding: 50px 0;
+    position: fixed;
+    width: 250px;
+    margin-top: 100px;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #0071bc;
+    background: white;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+   color: #0071bc;
+    background: white;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #2e3192;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #0071bc !important;
+    color: #fff !important;
+}
+
+
+.icon-sidebar{
+    width: 60px;
+    position: fixed;
+    margin-left: 180px;
+    top: 90%;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+.header-logo{
+    width:100px;
+    margin:0 auto;
+}
+.header-logo img{
+    width: 100%;
+}
+
+.content-title{
+    font-size: 2rem;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.letters{
+    text-align: right;
+    margin-top: 5px;
+    color: grey;
+}
+
+.accordion{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
